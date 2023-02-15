@@ -1,5 +1,47 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanna Zakharenko's Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header"><h1>Hanna Zakharenko's Labs for INST377</h1></header>
+    <div class="container">
+      <div class="left_section box">
+        <h3>Albums</h3>
+        <ol class="box">
+          <li>DECIDE - Djo</li>
+          <li>Waiting to Spill - The Backseat Lovers</li>
+          <li>Sunny Boy - Ritt Momney</li>
+          <li>Good Morning It's Now Tomorrow - Matt Maltese</li>
+          <li>Laurel Hell - Mitski</li>
+        </ol>
+      </div>
+      <div class="right_section box">
+        <h3>Image Carousel</h3>
+        <div class="carousel">
+            <button class="prev">prev</button>
+            <div class="slides">
+              <div class="carousel_item visible"><img id="slide_1" src="images/books.png" alt="A stack of books."></div>
+              <div class="carousel_item hidden"><img id="slide_2" src="images/lavender.jpeg" alt="Lavender growing in the fields."></div>
+              <div class="carousel_item hidden"><img id="slide_3" src="images/rock-candy.jpeg" alt="Some rock candy."></div>
+              <div class="carousel_item hidden"><img id="slide_4" src="images/mountain.jpeg" alt="A mountain landscape."></div>
+            </div>
+            <button class="next">next</button>
+        </div>
+        <div class="box">
+          <p>These images show some of the things I like: books, lavender, rock candy, and mountains.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <footer class="footer">hzakharenko <a href="http://github.com/hzakharenko/" target="_blank" rel="noopener noreferrer">Hanna Zakharenko Github Account</a></footer>
+  </div>
+  <script src="script.js" ></script>
+</body>
+</html>
