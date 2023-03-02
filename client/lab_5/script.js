@@ -10,7 +10,7 @@ function filterList(list, query) {
     const lowerCaseQuery = query.toLowerCase();
     return lowerCaseName.includes(lowerCaseQuery);
 
-  })
+  });
   /*
     Using the .filter array method, 
     return a list that is filtered by comparing the item name in lower case
@@ -71,7 +71,7 @@ async function mainEvent() { // the async keyword means we can make API requests
     const newList = filterList(currentList, formProps.resto);
 
     console.log(newList);
-  })
+  });
   /*
     Now that you HAVE a list loaded, write an event listener set to your filter button
     it should use the 'new FormData(target-form)' method to read the contents of your main form
