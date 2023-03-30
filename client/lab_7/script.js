@@ -57,8 +57,6 @@ async function mainEvent() { // the async keyword means we can make API requests
     generateListButton.classList.add('hidden');
 
     let storedList = [];
-
-
     let currentList = []; // this is "scoped" to the main event function
 
     /* We need to listen to an "event" to have something happen in our page - here we're listening for a "submit" */
@@ -115,7 +113,7 @@ async function mainEvent() { // the async keyword means we can make API requests
 
     generateListButton.addEventListener('click', (event) => {
         console.log('generate new list');
-        const currentList = cutRestaurantList(storedList);
+        currentList = cutRestaurantList(storedList);
         console.log(currentList);
         injectHTML(currentList);
 
