@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hanna Zakharenko's Labs for INST377</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
     <link rel="stylesheet" href="style.css">
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+
 </head>
 
 <body>
@@ -23,6 +34,7 @@
                 <!--THIS IS FOR LAB 5 check HTML if match-->
                 <form class="box main_form">
                     <button type="button" id="data_load">Load County Data</button>
+                    <button type="button" id="data_clear">Clear County Data</button>
                     <div>
                         <label for="resto">Filter By Restaurant Name</label>
                         <input type="text" id="resto" name="resto">
@@ -36,6 +48,7 @@
                 <!--right section-->
                 <!--images box-->
                 <h3>Local Restaurants</h3>
+                <div id="map" class="box"></div>
                 <ol class="box" id="restaurant_list">
                     <!--description box-->
                     A list of local restaurants
